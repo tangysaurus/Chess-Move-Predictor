@@ -86,5 +86,6 @@ def probable_walk(origin, n):
 
 connections = find_connections()
 probabilities = relative_freq(connections)
-walk = probable_walk("d2d4", 10)
 transition, states_to_id = transition_matrix(probabilities)
+# Most probable sequence of 10 step moves given the current move sequence is "d2d4"
+walk = probable_walk("d2d4", 10)
